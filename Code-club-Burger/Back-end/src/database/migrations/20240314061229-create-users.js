@@ -5,10 +5,10 @@ module.exports = {
     // Cria uma tabela de users
     await queryInterface.createTable('users', {
       id: {
-        type: Sequelize.UUID,
-        defaultValue: Sequelize.UUIDV4,
-        allowNull: false,
-        primaryKey: true,
+        type: Sequelize.UUID, //tipo dele
+        defaultValue: Sequelize.UUIDV4, // valor que ele vai ser
+        allowNull: false, //Define que esse campo é obrigatorio
+        primaryKey: true, //define que ele nao pode se repetir
       },
       name: {
         type: Sequelize.STRING,
@@ -17,7 +17,7 @@ module.exports = {
       email: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: true,
+        unique: true, //Aqui dizemos que ele dever ser unico
       },
       password_hash: {
         type: Sequelize.STRING,
@@ -25,7 +25,7 @@ module.exports = {
       },
       admin: {
         type: Sequelize.BOOLEAN,
-        defaultValue: false,
+        defaultValue: false, //valor padrão = false
         allowNull: false,
       },
       created_at: {

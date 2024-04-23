@@ -1,5 +1,6 @@
 'use strict';
 
+//Criar tabela de produtos
 module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.createTable('products', { 

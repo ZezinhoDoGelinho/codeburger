@@ -1,5 +1,6 @@
 'use strict';
 
+//Deletar a coluna category de products
 module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.removeColumn('products', 'category');

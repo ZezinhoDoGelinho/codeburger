@@ -1,7 +1,8 @@
-const { resolve } = require('path')
+const { resolve } = require('path') //O "resolve" serve para navegarmos entre pastas independente do sistema oparacional
 
-module.exports = {
-    config: resolve(__dirname, 'src' , 'config', 'database.js'),
-    'models-path': resolve(__dirname, 'src', 'models'),
-    'migrations-path': resolve(__dirname, 'src', 'database', 'migrations')
+//Exportando configs do sequelize
+module.exports = {                                                          //aqui dizemos onde está:
+    config: resolve(__dirname, 'src' , 'config', 'database.js'),            //O arquivo de config do sequelize
+    'models-path': resolve(__dirname, 'src', 'models'),                     //Os models do nosso app
+    'migrations-path': resolve(__dirname, 'src', 'database', 'migrations')  //As migrations
 }

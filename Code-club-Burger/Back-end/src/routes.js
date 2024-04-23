@@ -1,4 +1,4 @@
-import { Router } from "express"
+import { Router } from "express" //pegando só a parte do express responsavel pelas rotas (no caso o "Router")
 import multer from "multer"
 import multerConfig from './config/multer'
 
@@ -12,7 +12,7 @@ import authMiddleware from './app/middlewares/auth'
 
 const upload = multer(multerConfig) //Config para mandar fotos dos produtos
 
-const routes = new Router()
+const routes = new Router() //Armazenando o router em uma variavel
 
 //       ==--==--==             ROTAS             ==--==--==
 

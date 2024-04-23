@@ -1,8 +1,9 @@
 'use strict';
 
-/** @type {import('sequelize-cli').Migration} */
+//Cria a tabela de categorias
 module.exports = {
   async up (queryInterface, Sequelize) {
+    
     await queryInterface.createTable('categories', { 
       id: {
         type: Sequelize.INTEGER,

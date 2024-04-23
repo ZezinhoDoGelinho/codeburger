@@ -1,6 +1,4 @@
 import mongoose from "mongoose";
-import { INTEGER } from "sequelize";
-import { number } from "yup";
 
 const OrderSchema = new mongoose.Schema({
     user:{
